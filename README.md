@@ -143,7 +143,21 @@ public class Herencia {
         }
     }
     
-   
+   public class Deportista extends Persona {
+    public Deportista (){
+        
+    setNombre("");
+    setApellido("");
+    setProfesion("Deportista");
+    setEdad(35);
+    setPeso(150);
+    setEstadocivil("");
+    }
+    @Override
+     public String getInfoPersona() {
+       return "\n"+ "--Informacion Deportista--";
+    }   
+}
         }
         Clase abstracta  pública Persona { 
     // Propiedades
